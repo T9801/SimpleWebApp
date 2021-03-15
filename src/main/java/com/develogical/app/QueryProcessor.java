@@ -7,6 +7,9 @@ public class QueryProcessor {
                     "English poet, playwright, and actor, widely regarded as the greatest " +
                     "writer in the English language and the world's pre-eminent dramatist.";
         }
+        if (query.toLowerCase().contains("hoare")) {
+            return "Sir Charles Antony Richard Hoare FRS FREng (born 11 January 1934)[4] is a British computer scientist.";
+        }
         return "";
     }
 }
