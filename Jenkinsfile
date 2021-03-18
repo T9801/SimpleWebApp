@@ -3,9 +3,9 @@ node {
  git 'https://github.com/T9801/SimpleWebApp.git' 
 } 
  stage('Build') { 
- sh.exe "./gradlew clean test" 
+ git-bash.exe -c "./gradlew clean test" 
 } 
  stage('Deploy') { 
- sh.exe "git push https://git.heroku.com/cryptic-plateau-58964.git master" 
+ git-bash.exe -c "git push https://git.heroku.com/cryptic-plateau-58964.git master" 
 } 
 }
