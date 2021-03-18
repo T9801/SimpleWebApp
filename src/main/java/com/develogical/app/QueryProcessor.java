@@ -10,6 +10,10 @@ public class QueryProcessor {
         if (query.toLowerCase().contains("hoare")) {
             return "Sir Charles Antony Richard Hoare FRS FREng (born 11 January 1934)[4] is a British computer scientist.";
         }
+
+        if (query.toLowerCase().contains("person")) {
+            return "Sir Charles Antony Richard Hoare FRS FREng (born 11 January 1934)[4] is a British computer scientist.";
+        }
         if (query.toLowerCase().contains("test")) {
             return "returns >>test<<.";
         }
